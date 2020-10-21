@@ -1,0 +1,104 @@
+nav {
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+nav > a {
+   margin: 1rem;
+}
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label {
+    font-weight: bold;
+    flex: 1;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+input, select {
+    flex: 3;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.blue {
+    background-color: #147efb;
+    color: white;
+}
+body {
+    color: #8e8e93;
+}
+button {
+    border: none;
+    padding: .25rem;
+}
+.container {
+    display: flex
+}
+#entry {
+    width: 50%;
+    padding-bottom: 1rem;
+}
+#users {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#user {
+    display: flex;
+    flex-basis: 30%;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 25px;
+    height: 135px
+}
+#user > a {
+    margin-bottom: 0.5rem;
+    font-size: 13px;
+}
+.bold {
+    font-weight: bold;
+}
+.center {
+    align-items: center;
+    justify-content: center;
+}
+.column {
+    flex-direction: column;
+}
+h1 {
+    margin: 1rem;
+}
+.box {
+    border: 1px solid black;
+}
+form {
+    position: relative;
+}
+.leftpadfix {
+    margin-left: 1.5%
+}
+
+h3 {
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav > a {
+        align-self: flex-start;
+    }
+    #entry, #user {
+        width: 95%;
+    }   
+    nav {
+        flex-direction: column;
+    }
+    #users {
+        flex-direction: column;
+        justify-items: center;
+    }
+}
